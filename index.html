@@ -5,120 +5,916 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Patrick Primne | IT Operations Engineer</title>
-    
+
+    <meta
+        name="description"
+        content="Portfolio of Patrick Primne — IT Operations Engineer, Computer Engineer, and Technology Enthusiast."
+    >
+
     <link rel="stylesheet" href="style.css">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #030000;
-        }
 
-        header {
-            background: #111827;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h2 {
-            color: #111827;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill {
-            background: white;
-            padding: 10px 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px #ccc;
-        }
-
-        footer {
-            text-align: center;
-            background: #111827;
-            color: white;
-            padding: 20px;
-        }
-    </style>
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
-<header>
-    <h1>Patrick Primne</h1>
-    <p>IT Operations Engineer | Computer Engineer</p>
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            <span>&lt;</span>PP<span>/&gt;</span>
+        </a>
+
+        <nav id="nav-menu">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#photography" class="nav-link">Photography</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+    </div>
+
 </header>
 
-<section>
-    <h2>About Me</h2>
 
-    <p>
-        I am a Computer Engineering graduate with experience in
-        IT operations, technical support, computer hardware,
-        networking, troubleshooting, and system maintenance.
-    </p>
-</section>
+<!-- =========================
+     HERO
+========================= -->
 
-<section>
-    <h2>Skills</h2>
+<section id="home" class="hero">
 
-    <div class="skills">
-        <div class="skill">Computer Hardware</div>
-        <div class="skill">Network Troubleshooting</div>
-        <div class="skill">Windows Administration</div>
-        <div class="skill">IT Support</div>
-        <div class="skill">Printer Troubleshooting</div>
-        <div class="skill">Network Monitoring</div>
-        <div class="skill">Uptime Kuma</div>
-        <div class="skill">Docker</div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-container">
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                <span class="status-dot"></span>
+                AVAILABLE FOR OPPORTUNITIES
+            </p>
+
+            <h1>
+                Hello, I'm
+                <span class="gradient-text">Patrick.</span>
+            </h1>
+
+            <h2>
+                IT Operations Engineer
+                <span class="slash">/</span>
+                Computer Engineer
+            </h2>
+
+            <p class="hero-description">
+                I build, maintain, troubleshoot and optimize technology
+                systems — from computer hardware and networks to
+                monitoring tools and digital solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    View My Work
+                    <span>→</span>
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="GitHub">GH</a>
+                <a href="#" aria-label="LinkedIn">IN</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="terminal-window">
+
+                <div class="terminal-header">
+
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="terminal-title">
+                        patrick@portfolio:~
+                    </span>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="terminal-green">patrick</span>@portfolio:~$
+                        whoami
+                    </p>
+
+                    <p class="terminal-output">
+                        IT Operations Engineer
+                    </p>
+
+                    <p>
+                        <span class="terminal-green">patrick</span>@portfolio:~$
+                        skills
+                    </p>
+
+                    <p class="terminal-output">
+                        Hardware<br>
+                        Networking<br>
+                        System Administration<br>
+                        Troubleshooting<br>
+                        Web Development
+                    </p>
+
+                    <p>
+                        <span class="terminal-green">patrick</span>@portfolio:~$
+                        status
+                    </p>
+
+                    <p class="terminal-output success">
+                        ● Systems Operational
+                    </p>
+
+                    <span class="cursor"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
-<section>
-    <h2>Projects</h2>
 
-    <h3>Network Monitoring System</h3>
-    <p>
-        Created a network monitoring setup using Uptime Kuma
-        for monitoring servers, devices, and network connectivity.
-    </p>
+<!-- =========================
+     ABOUT
+========================= -->
 
-    <h3>IT Hardware Maintenance</h3>
-    <p>
-        Troubleshooting and maintenance of computers, printers,
-        networking equipment, and other IT infrastructure.
-    </p>
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">01</span>
+
+            <div>
+                <span class="section-label">ABOUT ME</span>
+
+                <h2>
+                    Technology is more than
+                    <span>just a job.</span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <div class="image-frame">
+
+                    <div class="image-placeholder">
+                        <span>YOUR<br>PHOTO</span>
+                    </div>
+
+                    <div class="image-corner top-left"></div>
+                    <div class="image-corner bottom-right"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="large-text">
+                    I'm a <strong>Computer Engineering graduate</strong>
+                    with experience in IT operations, technical support,
+                    computer hardware, networking and system troubleshooting.
+                </p>
+
+                <p>
+                    My work involves keeping technology reliable,
+                    secure and operational. I enjoy solving technical
+                    problems, learning new technologies and building
+                    practical digital solutions.
+                </p>
+
+                <p>
+                    Outside of traditional IT operations, I'm also interested
+                    in web development, automation, monitoring systems,
+                    photography and creating digital projects.
+                </p>
+
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <strong>IT</strong>
+                        <span>Operations</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>BSCE</strong>
+                        <span>Graduate</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>24/7</strong>
+                        <span>Problem Solving</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section>
-    <h2>Contact</h2>
 
-    <p>Email: your-email@example.com</p>
+<!-- =========================
+     SKILLS
+========================= -->
 
-    <p>
-        GitHub:
-        <a href="https://github.com/YOUR-USERNAME">
-            github.com/YOUR-USERNAME
-        </a>
-    </p>
+<section id="skills" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">02</span>
+
+            <div>
+                <span class="section-label">TECHNICAL SKILLS</span>
+
+                <h2>
+                    What I
+                    <span>work with.</span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    01
+                </div>
+
+                <h3>IT Operations</h3>
+
+                <p>
+                    System administration, technical support,
+                    troubleshooting and IT infrastructure maintenance.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Windows</span>
+                    <span>Hardware</span>
+                    <span>Support</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    02
+                </div>
+
+                <h3>Networking</h3>
+
+                <p>
+                    Network troubleshooting, LAN configuration,
+                    connectivity testing and network monitoring.
+                </p>
+
+                <div class="skill-tags">
+                    <span>TCP/IP</span>
+                    <span>LAN</span>
+                    <span>Monitoring</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    03
+                </div>
+
+                <h3>Hardware</h3>
+
+                <p>
+                    Computer assembly, diagnostics, preventive maintenance
+                    and hardware replacement.
+                </p>
+
+                <div class="skill-tags">
+                    <span>PC</span>
+                    <span>Printers</span>
+                    <span>Diagnostics</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    04
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Creating responsive websites and digital interfaces
+                    using modern web technologies.
+                </p>
+
+                <div class="skill-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    05
+                </div>
+
+                <h3>Monitoring</h3>
+
+                <p>
+                    Building monitoring solutions to observe servers,
+                    devices and network availability.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Uptime Kuma</span>
+                    <span>Ping</span>
+                    <span>Docker</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    06
+                </div>
+
+                <h3>Creative Tech</h3>
+
+                <p>
+                    Photography, image editing, digital design and
+                    creative technology projects.
+                </p>
+
+                <div class="skill-tags">
+                    <span>Photography</span>
+                    <span>Lightroom</span>
+                    <span>Canva</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">03</span>
+
+            <div>
+                <span class="section-label">PROJECTS</span>
+
+                <h2>
+                    Things I've
+                    <span>worked on.</span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <div class="project-visual network-visual">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        NETWORKING
+                    </span>
+
+                    <h3>
+                        Network Monitoring System
+                    </h3>
+
+                    <p>
+                        Network monitoring setup designed to monitor
+                        device availability, connectivity and uptime.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Uptime Kuma</span>
+                        <span>Docker</span>
+                        <span>Networking</span>
+
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <div class="project-visual code-visual">
+
+                        <span>&lt;/&gt;</span>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h3>
+                        Personal Portfolio
+                    </h3>
+
+                    <p>
+                        Responsive personal portfolio website built
+                        using HTML, CSS and JavaScript and hosted on GitHub Pages.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <div class="project-visual server-visual">
+
+                        <div class="server-rack">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        IT OPERATIONS
+                    </span>
+
+                    <h3>
+                        IT Infrastructure Support
+                    </h3>
+
+                    <p>
+                        Hardware troubleshooting, computer maintenance,
+                        printer support and network infrastructure assistance.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>Hardware</span>
+                        <span>Windows</span>
+                        <span>Networking</span>
+
+                    </div>
+
+                    <a href="#" class="project-link">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
+<section id="experience" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">04</span>
+
+            <div>
+                <span class="section-label">EXPERIENCE</span>
+
+                <h2>
+                    My professional
+                    <span>journey.</span>
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    PRESENT
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        IT Operations Engineer
+                    </h3>
+
+                    <span>
+                        Technical & Network Operations
+                    </span>
+
+                    <p>
+                        Supporting IT infrastructure, computer systems,
+                        network equipment, printers and users while
+                        troubleshooting technical issues and maintaining
+                        operational reliability.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    PREVIOUS
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Personnel Support Staff
+                    </h3>
+
+                    <span>
+                        Administrative & Operational Support
+                    </span>
+
+                    <p>
+                        Provided administrative and operational support,
+                        documentation assistance and coordination of
+                        day-to-day activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    EDUCATION
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Bachelor of Science in Computer Engineering
+                    </h3>
+
+                    <span>
+                        Computer Engineering
+                    </span>
+
+                    <p>
+                        Academic background covering computer systems,
+                        electronics, programming, networking and
+                        engineering fundamentals.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PHOTOGRAPHY
+========================= -->
+
+<section id="photography" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-number">05</span>
+
+            <div>
+
+                <span class="section-label">
+                    PHOTOGRAPHY
+                </span>
+
+                <h2>
+                    Behind the
+                    <span>lens.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="photo-intro">
+
+            <p>
+                Technology isn't my only passion. Photography gives me
+                another way to observe the world, capture moments and
+                tell stories visually.
+            </p>
+
+            <a href="#" class="btn btn-outline">
+                Visit My Photography
+            </a>
+
+        </div>
+
+
+        <div class="photo-grid">
+
+            <div class="photo photo-large">
+                <div>
+                    <span>PHOTO 01</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div>
+                    <span>PHOTO 02</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div>
+                    <span>PHOTO 03</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div>
+                    <span>PHOTO 04</span>
+                </div>
+            </div>
+
+            <div class="photo">
+                <div>
+                    <span>PHOTO 05</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="contact-grid"></div>
+
+    <div class="container">
+
+        <div class="contact-content">
+
+            <span class="section-label">
+                06 / CONTACT
+            </span>
+
+            <h2>
+                Let's build something
+                <span>useful.</span>
+            </h2>
+
+            <p>
+                Have a project, opportunity or technical challenge?
+                I'd be happy to connect.
+            </p>
+
+
+            <a
+                href="mailto:your@email.com"
+                class="contact-email"
+            >
+                your@email.com
+            </a>
+
+
+            <div class="contact-buttons">
+
+                <a href="mailto:your@email.com"
+                   class="btn btn-primary">
+                    Send Email →
+                </a>
+
+                <a href="#home"
+                   class="btn btn-outline">
+                    Back to Top ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
-    <p>© 2026 Patrick Primne</p>
+
+    <div class="container footer-container">
+
+        <div class="footer-logo">
+            <span>&lt;</span>PP<span>/&gt;</span>
+        </div>
+
+        <p>
+            © 2026 Patrick Primne. Built with HTML, CSS & JavaScript.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
